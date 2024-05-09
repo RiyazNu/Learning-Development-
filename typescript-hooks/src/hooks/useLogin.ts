@@ -4,6 +4,7 @@ const useLogin = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const login = useCallback((username: string, password: string) => {
+    
     if (username === 'admin' && password === 'password') {
       setIsLoggedIn(true);
     } else {
